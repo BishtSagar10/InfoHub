@@ -1,6 +1,5 @@
 package com.example.infohub.presentation.onboarding
 
-import android.graphics.pdf.PdfDocument.Page
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -19,8 +18,8 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import com.example.infohub.presentation.onboarding.common.NewsButton
-import com.example.infohub.presentation.onboarding.common.NewsTxtButton
+import com.example.infohub.presentation.common.NewsButton
+import com.example.infohub.presentation.common.NewsTxtButton
 import com.example.infohub.presentation.onboarding.components.OnboardingPage
 import com.example.infohub.presentation.onboarding.components.PageIndicator
 import com.example.infohub.presentation.onboarding.dimens.MediumPadding2
@@ -29,7 +28,9 @@ import kotlinx.coroutines.launch
 
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
-fun OnboardingScreen(){
+fun OnboardingScreen(
+    event: (OnBoardingEvent) -> Unit
+){
     Column(modifier= Modifier.fillMaxSize()){
         val pagerState= rememberPagerState(initialPage = 0){
             pages.size
@@ -40,7 +41,7 @@ fun OnboardingScreen(){
                 when(pagerState.currentPage){
                     0->listOf("","Next")
                     1->listOf("Back","Next")
-                    2->listOf("Back","Get","Started")
+                    2->listOf("Back","Get Started")
                     else->listOf("","")
                 }
             }
@@ -83,8 +84,8 @@ fun OnboardingScreen(){
                     text = buttonState.value[1],
                     onClick = {
                         scope.launch {
-                            if (pagerState.currentPage == 3) {
-                                //TODO:navigate to home screen
+                            if (pagerState.currentPage == 2) {
+                                event(OnBoardingEvent.SaveAppEntry)
                             } else {
                                 pagerState.animateScrollToPage(
                                     page = pagerState.currentPage + 1

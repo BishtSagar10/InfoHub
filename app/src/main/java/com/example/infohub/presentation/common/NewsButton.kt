@@ -1,4 +1,4 @@
-package com.example.infohub.presentation.onboarding.common
+package com.example.infohub.presentation.common
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
