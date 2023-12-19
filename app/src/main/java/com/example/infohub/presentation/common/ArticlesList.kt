@@ -1,5 +1,6 @@
 package com.example.infohub.presentation.common
 
+import android.annotation.SuppressLint
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
@@ -14,6 +15,7 @@ import com.example.infohub.domain.model.Article
 import com.example.infohub.presentation.onboarding.dimens.ExtraSmallPadding2
 import com.example.infohub.presentation.onboarding.dimens.MediumPadding1
 
+@SuppressLint("SuspiciousIndentation")
 @Composable
 fun ArticlesList(
     modifier: Modifier=Modifier,

@@ -98,6 +98,7 @@ fun DetailsScreen(
 
                 /*Text(text=article
                     .title,
+
                     style=MaterialTheme
                         .typography
                         .displaySmall,
@@ -128,7 +129,7 @@ fun DetailsScreen(
 fun DetailsScreenPreview(){
     InfoHubTheme {
         DetailsScreen(
-            article =Article(
+            article = Article(
                 author="",
                 title="s sunset nears, Raphaël De Cock leads a group of about 30 people through the Sonian Forest, just outside Brussels, Belgium. As they traverse the winding trail, he calls attention to the surrounding landscape. The forest, he tells them, is prime firefly habitat.",
                 description="Artists are seeking ways to boost firefly conservation. They aren’t the only insects that could benefit",
