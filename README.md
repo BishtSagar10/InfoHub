@@ -1,3 +1,4 @@
+![logo](https://github.com/user-attachments/assets/9eb5ee99-27cd-4817-b6a2-94b09d3f6dba)
 📱InfoHub News Application
 
 InfoHub is an Android news application developed to provide users with real-time, diverse, and credible news from multiple sources, helping them personalize their news feed and avoid misinformation. Built with modern Android technologies and intuitive UI/UX, InfoHub offers features like search, bookmarking, and sharing.
