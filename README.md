@@ -5,12 +5,12 @@
 
 
 
-📱InfoHub News Application
+<hr><h1>📱InfoHub News Application</h1><hr>
 
 InfoHub is an Android news application developed to provide users with real-time, diverse, and credible news from multiple sources, helping them personalize their news feed and avoid misinformation. Built with modern Android technologies and intuitive UI/UX, InfoHub offers features like search, bookmarking, and sharing.
 
 
-🚀 Features
+<hr><h1>🚀 Features</h1><hr>
 
    Browse and search news articles from multiple sources.
 
@@ -30,7 +30,7 @@ InfoHub is an Android news application developed to provide users with real-time
 
 
 
-🛠️ Languages Used
+<hr><h1>🛠️ Languages Used</h1><hr>
 
 Kotlin — Main language for Android app development.
 
@@ -38,7 +38,7 @@ Python — For news data extraction and backend scripts.
 
 
 
-💻 Technologies Used
+<hr><h1>💻 Technologies Used</h1><hr>
 
 
 Jetpack Compose — Modern toolkit for UI development.
